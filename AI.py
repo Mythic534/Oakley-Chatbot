@@ -13,7 +13,7 @@ def get_messages(question):
     with open("context.txt", "r", encoding="utf-8") as f:
         context = f.read()
 
-    message = f"Use the following information to aid in answering the subsequent question:\n\n{context}\n\nAs well as information from our website if provided:{website}\n\nQuestion: {question}" # Pass question in as a cmd line argument with quotation marks
+    message = f"Use the following information to aid in answering the subsequent question:\n\n{context}\n\nAs well as information from our website if provided:{website}\n\nQuestion: {question}"
 
     messages=[
             {
